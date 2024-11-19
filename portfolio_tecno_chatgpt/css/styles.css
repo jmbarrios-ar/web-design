@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  #inicio {
+    background-image: url('img/electronics-technology-circuit-1920x800.jpg') no-repeat center center/cover;
+    height: 100vh;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  
+  footer {
+    margin-top: 20px;
+  }
+  
