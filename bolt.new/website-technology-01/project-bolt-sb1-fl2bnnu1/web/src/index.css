@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #198754;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-color);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-section {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 2rem 0;
+}
+
+.service-card {
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.about-section {
+  background-color: var(--light-color);
+}
+
+.contact-section {
+  background-color: white;
+}
+
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+.carousel-item img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 40vh;
+  }
+}
