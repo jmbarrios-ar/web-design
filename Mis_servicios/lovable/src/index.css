@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* S3tech Design System - Minimalist Dark */
+
+@layer base {
+  :root {
+    /* Minimalist dark theme */
+    --background: 220 15% 6%;
+    --foreground: 220 10% 95%;
+    
+    /* Clean surface colors */
+    --surface: 220 15% 8%;
+    --surface-elevated: 220 15% 12%;
+    
+    /* Minimal accent colors */
+    --primary: 220 100% 70%;
+    --primary-foreground: 220 15% 6%;
+    --primary-glow: 220 100% 80%;
+    
+    --secondary: 200 100% 65%;
+    --secondary-foreground: 220 15% 6%;
+    --secondary-glow: 200 100% 75%;
+    
+    --accent: 160 100% 60%;
+    --accent-foreground: 220 15% 6%;
+    --accent-glow: 160 100% 70%;
+    
+    /* Card and surface colors */
+    --card: 210 50% 8%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 210 50% 8%;
+    --popover-foreground: 210 40% 98%;
+    
+    --muted: 210 30% 20%;
+    --muted-foreground: 210 20% 65%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 30% 20%;
+    --input: 210 30% 15%;
+    --ring: 260 85% 65%;
+
+    --radius: 1rem;
+    
+    /* Minimal gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--surface)), hsl(var(--surface-elevated)));
+    
+    /* Clean shadows */
+    --shadow-subtle: 0 1px 3px hsl(220 15% 0% / 0.12);
+    --shadow-medium: 0 4px 12px hsl(220 15% 0% / 0.15);
+    --shadow-large: 0 8px 25px hsl(220 15% 0% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Minimal accent text */
+  .accent-text {
+    @apply text-primary font-medium;
+  }
+  
+  /* Clean minimal button */
+  .btn-minimal {
+    @apply relative px-6 py-3 rounded-lg font-medium transition-all duration-200;
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+    @apply shadow-subtle hover:shadow-medium;
+  }
+  
+  .btn-minimal:hover {
+    transform: translateY(-1px);
+  }
+  
+  /* Minimal card styles */
+  .card-minimal {
+    @apply bg-surface border border-border rounded-lg;
+    @apply shadow-subtle hover:shadow-medium transition-shadow duration-200;
+  }
+  
+  /* Mobile menu animation */
+  .mobile-menu-enter {
+    @apply transform translate-x-full;
+  }
+  
+  .mobile-menu-enter-active {
+    @apply transform translate-x-0 transition-transform duration-300 ease-out;
+  }
+  
+  .mobile-menu-exit {
+    @apply transform translate-x-0;
+  }
+  
+  .mobile-menu-exit-active {
+    @apply transform translate-x-full transition-transform duration-300 ease-in;
+  }
+  
+  /* Hamburger animation */
+  .hamburger-line {
+    @apply w-6 h-0.5 bg-foreground transition-all duration-300 ease-in-out;
+  }
+  
+  .hamburger-active .hamburger-line:nth-child(1) {
+    @apply rotate-45 translate-y-2;
+  }
+  
+  .hamburger-active .hamburger-line:nth-child(2) {
+    @apply opacity-0;
+  }
+  
+  .hamburger-active .hamburger-line:nth-child(3) {
+    @apply -rotate-45 -translate-y-2;
+  }
+  
+  /* Fade in animation */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
