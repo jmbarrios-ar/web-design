@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>s3tech | Soporte Servicios Soluciones</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header y navegación -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="s3tech Logo">
+                <span>s3tech</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con carousel -->
+    <section id="inicio" class="hero">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/hero1.jpg" alt="Servicios de telecomunicaciones">
+                    <div class="carousel-caption">
+                        <h1>Soluciones Tecnológicas Integrales</h1>
+                        <p>Expertos en telecomunicaciones, redes y sistemas inteligentes</p>
+                        <a href="#servicios" class="btn-primary">Nuestros Servicios</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero2.jpg" alt="Sistemas fotovoltaicos">
+                    <div class="carousel-caption">
+                        <h1>Energía Solar para tu Hogar</h1>
+                        <p>Instalación y mantenimiento de sistemas fotovoltaicos</p>
+                        <a href="#servicios" class="btn-primary">Conoce más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hero3.jpg" alt="Casas inteligentes IoT">
+                    <div class="carousel-caption">
+                        <h1>Automatización Residencial</h1>
+                        <p>Transforma tu hogar con tecnología IoT</p>
+                        <a href="#servicios" class="btn-primary">Descubre cómo</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" id="prevSlide">&#10094;</button>
+            <button class="carousel-control next" id="nextSlide">&#10095;</button>
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Servicios</h2>
+            <p class="section-subtitle">Soluciones tecnológicas profesionales para hogares y empresas</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/redes.jpg" alt="Redes e Infraestructura">
+                    </div>
+                    <div class="service-content">
+                        <h3>Redes e Infraestructura</h3>
+                        <p>Diseño, implementación y mantenimiento de redes de datos y infraestructura de servidores.</p>
+                        <a href="#" class="btn-secondary">Más información</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/iot.jpg" alt="IoT para Casas Inteligentes">
+                    </div>
+                    <div class="service-content">
+                        <h3>IoT para Casas Inteligentes</h3>
+                        <p>Automatización residencial con dispositivos IoT para mayor comodidad, seguridad y eficiencia energética.</p>
+                        <a href="#" class="btn-secondary">Más información</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/fotovoltaico.jpg" alt="Sistemas Fotovoltaicos">
+                    </div>
+                    <div class="service-content">
+                        <h3>Sistemas Fotovoltaicos</h3>
+                        <p>Instalación de paneles solares y sistemas de energía renovable para hogares y pequeñas empresas.</p>
+                        <a href="#" class="btn-secondary">Más información</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/vigilancia.jpg" alt="Sistemas de Videovigilancia">
+                    </div>
+                    <div class="service-content">
+                        <h3>Videovigilancia</h3>
+                        <p>Instalación de sistemas de seguridad y videovigilancia con monitoreo local y remoto.</p>
+                        <a href="#" class="btn-secondary">Más información</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/mantenimiento.jpg" alt="Mantenimiento de Equipos">
+                    </div>
+                    <div class="service-content">
+                        <h3>Mantenimiento Informático</h3>
+                        <p>Reparación, mantenimiento preventivo y correctivo de equipos informáticos y periféricos.</p>
+                        <a href="#" class="btn-secondary">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de -->
+    <section id="acerca" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Acerca de s3tech</h2>
+                    <p>s3tech es un emprendimiento especializado en servicios tecnológicos integrales, enfocado en brindar soluciones personalizadas y de calidad para hogares y pequeñas empresas.</p>
+                    <p>Con años de experiencia en el rubro, nos destacamos por nuestro compromiso con la satisfacción del cliente, profesionalismo y atención personalizada.</p>
+                    <p>Nuestro objetivo es simplificar la tecnología para nuestros clientes, ofreciendo servicios confiables y de alto rendimiento que se adapten a sus necesidades específicas.</p>
+                    
+                    <div class="business-info">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Viernes: 9:00 - 18:00 hs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Contacto</h4>
+                                <p>+54 9 388 1234-5678</p>
+                                <p>info@s3tech.net.ar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="images/tech-support.jpg" alt="Soporte Técnico s3tech">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Formulario de Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">¿En qué podemos ayudarte?</h2>
+            <p class="section-subtitle">Completa el formulario y nos pondremos en contacto a la brevedad</p>
+            
+            <form id="budgetForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre completo *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Servicio de interés *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="redes">Redes e Infraestructura</option>
+                        <option value="iot">IoT para Casas Inteligentes</option>
+                        <option value="fotovoltaico">Sistemas Fotovoltaicos</option>
+                        <option value="vigilancia">Sistemas de Videovigilancia</option>
+                        <option value="mantenimiento">Mantenimiento de Equipos</option>
+                        <option value="otros">Otros Servicios</option>
+                    </select>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="message">Mensaje *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Describe tu consulta o necesidad..."></textarea>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class btn-primary>Enviar Consulta</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="s3tech Logo">
+                        <span>s3tech</span>
+                    </div>
+                    <p>Soluciones tecnológicas integrales para hogares y empresas.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Redes e Infraestructura</a></li>
+                        <li><a href="#">IoT para Casas Inteligentes</a></li>
+                        <li><a href="#">Sistemas Fotovoltaicos</a></li>
+                        <li><a href="#">Videovigilancia</a></li>
+                        <li><a href="#">Mantenimiento Informático</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#acerca">Acerca de</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +54 9 388 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@s3tech.net.ar</li>
+                        <li><i class="fas fa-clock"></i> Lun-Vie: 9:00 - 18:00</li>
+                        <!-- <li><i class="fas fa-clock"></i> Sáb: 9:00 - 13:00</li> -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 s3tech - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
