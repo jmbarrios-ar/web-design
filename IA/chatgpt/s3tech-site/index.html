@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>s3tech | Servicios de Telecomunicaciones, Redes, IoT, Servidores y más</title>
+  <meta name="description" content="s3tech: Soporte y mantenimiento en tecnología. Redes, Telecomunicaciones, Servidores, IoT para casas inteligentes, videovigilancia y sistemas fotovoltaicos." />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <img src="assets/logo.svg" alt="s3tech logo" width="120" height="32" loading="eager" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-controls="primary-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#acerca">Acerca de mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero" aria-label="Destacado">
+    <div class="hero-slider" id="hero-slider" aria-live="polite">
+      <div class="slide" style="--bg:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1920&auto=format&fit=crop');">
+        <div class="overlay"></div>
+        <div class="hero-content container">
+          <h1>Soluciones tecnológicas <span class="accent">integrales</span></h1>
+          <p>Telecomunicaciones, Redes, IoT, Servidores, Videovigilancia y Fotovoltaico para hogares y pymes.</p>
+          <a class="btn btn-primary" href="#contacto">Solicitar presupuesto</a>
+        </div>
+      </div>
+      <div class="slide" style="--bg:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1920&auto=format&fit=crop');">
+        <div class="overlay"></div>
+        <div class="hero-content container">
+          <h2>Infraestructura que <span class="accent">funciona</span> 24/7</h2>
+          <p>Implementación y mantenimiento de redes cableadas e inalámbricas, servidores y seguridad.</p>
+          <a class="btn" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+      <div class="slide" style="--bg:url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1920&auto=format&fit=crop');">
+        <div class="overlay"></div>
+        <div class="hero-content container">
+          <h2>Hogares inteligentes <span class="accent">accesibles</span></h2>
+          <p>Automatización, sensores, energía solar y monitoreo, con soporte local.</p>
+          <a class="btn btn-outline" href="#contacto">Hablemos</a>
+        </div>
+      </div>
+      <button class="slider-btn prev" id="prev" aria-label="Imagen anterior">&#10094;</button>
+      <button class="slider-btn next" id="next" aria-label="Imagen siguiente">&#10095;</button>
+      <div class="dots" id="dots" aria-label="Indicadores de carrusel"></div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section container">
+    <header class="section-header">
+      <h2>Servicios</h2>
+      <p>Asesoramiento, implementación y mantenimiento con foco en calidad y seguridad.</p>
+    </header>
+
+    <div class="cards-grid">
+      <!-- Card: Telecomunicaciones -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1200&auto=format&fit=crop" alt="Antena y radioenlace de telecomunicaciones" loading="lazy">
+        <div class="card-content">
+          <h3>Telecomunicaciones</h3>
+          <p>Enlaces punto a punto, Wi‑Fi profesional, cableado estructurado y certificación.</p>
+          <a class="card-link" href="#contacto">Más información</a>
+        </div>
+      </article>
+
+      <!-- Card: Redes y Servidores -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1585079542156-2755d9c8affc?q=80&w=1200&auto=format&fit=crop" alt="Rack de servidores y equipos de red" loading="lazy">
+        <div class="card-content">
+          <h3>Redes e Infraestructura de Servidores</h3>
+          <p>Diseño, instalación y hardening de LAN/WAN, virtualización, backup y monitoreo.</p>
+          <a class="card-link" href="#contacto">Más información</a>
+        </div>
+      </article>
+
+      <!-- Card: IoT / Smart Home -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1509395282944-2d94a9e0c87c?q=80&w=1200&auto=format&fit=crop" alt="Casa inteligente con dispositivos conectados" loading="lazy">
+        <div class="card-content">
+          <h3>IoT para Casas Inteligentes</h3>
+          <p>Automatización con MQTT/Node‑RED, sensores, control de iluminación y energía.</p>
+          <a class="card-link" href="#contacto">Más información</a>
+        </div>
+      </article>
+
+      <!-- Card: Fotovoltaico -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop" alt="Paneles solares en techo de vivienda" loading="lazy">
+        <div class="card-content">
+          <h3>Sistemas Fotovoltaicos</h3>
+          <p>Dimensionamiento, instalación on‑grid/off‑grid y monitoreo de producción.</p>
+          <a class="card-link" href="#contacto">Más información</a>
+        </div>
+      </article>
+
+      <!-- Card: Videovigilancia -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?q=80&w=1200&auto=format&fit=crop" alt="Cámara de seguridad CCTV" loading="lazy">
+        <div class="card-content">
+          <h3>Videovigilancia</h3>
+          <p>CCTV/IP, almacenamiento, acceso remoto seguro y analítica de video.</p>
+          <a class="card-link" href="#contacto">Más información</a>
+        </div>
+      </article>
+
+      <!-- Card: Mantenimiento Informático -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop" alt="Técnico realizando mantenimiento de PC" loading="lazy">
+        <div class="card-content">
+          <h3>Mantenimiento de Equipos Informáticos</h3>
+          <p>Diagnóstico, limpieza, upgrades, optimización de Windows y seguridad.</p>
+          <a class="card-link" href="#contacto">Más información</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Acerca -->
+  <section id="acerca" class="section alt">
+    <div class="container about">
+      <div>
+        <h2>Acerca de mí</h2>
+        <p>Soy <strong>Juan Manuel Barrios</strong>, Ingeniero en Electrónica, con más de 10 años brindando soluciones para hogares y pymes. Me especializo en <em>Telecomunicaciones, Redes, Servidores e IoT</em>, priorizando la seguridad, la documentación clara y el soporte post‑venta.</p>
+        <ul class="badges" aria-label="Habilidades destacadas">
+          <li>MikroTik</li><li>FortiGate</li><li>Windows Server</li><li>Linux</li><li>MQTT</li><li>Node‑RED</li><li>Docker</li><li>Grafana</li>
+        </ul>
+      </div>
+      <aside class="info">
+        <h3>Información de contacto</h3>
+        <ul class="list">
+          <li><strong>Emprendimiento:</strong> s3tech</li>
+          <li><strong>Email:</strong> <a href="mailto:contacto@s3tech.ar">contacto@s3tech.ar</a></li>
+          <li><strong>Teléfono:</strong> <a href="tel:+5493880000000">+54 9 388 000 0000</a></li>
+          <li><strong>Horario:</strong> Lun–Vie 9:00–18:00 (ART)</li>
+          <li><strong>Ubicación:</strong> Jujuy, Argentina</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <header class="section-header">
+        <h2>Contacto & Presupuestos</h2>
+        <p>Contame qué necesitás y te respondo a la brevedad.</p>
+      </header>
+
+      <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+            <small class="error-msg" aria-live="polite"></small>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+            <small class="error-msg" aria-live="polite"></small>
+          </div>
+          <div class="form-field">
+            <label for="telefono">Teléfono (opcional)</label>
+            <input id="telefono" name="telefono" type="tel" placeholder="+54 9 ...">
+          </div>
+          <div class="form-field">
+            <label for="servicio">Servicio</label>
+            <select id="servicio" name="servicio" required>
+              <option value="">Seleccionar…</option>
+              <option>Telecomunicaciones</option>
+              <option>Redes y Servidores</option>
+              <option>IoT / Casa Inteligente</option>
+              <option>Sistema Fotovoltaico</option>
+              <option>Videovigilancia</option>
+              <option>Mantenimiento Informático</option>
+              <option>Otro</option>
+            </select>
+            <small class="error-msg" aria-live="polite"></small>
+          </div>
+          <div class="form-field form-span">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Contame brevemente tu necesidad…" required></textarea>
+            <small class="error-msg" aria-live="polite"></small>
+          </div>
+          <div class="form-field form-span checkbox">
+            <label>
+              <input type="checkbox" id="politica" name="politica" required>
+              Acepto el uso de mis datos para responder a mi consulta.
+            </label>
+            <small class="error-msg" aria-live="polite"></small>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-foot">
+        <img src="assets/logo.svg" alt="s3tech" width="120" height="32" loading="lazy" />
+        <p>© <span id="year"></span> s3tech — Soluciones tecnológicas para hogares y pymes.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#acerca">Acerca</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="mailto:contacto@s3tech.ar">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
